@@ -1,0 +1,57 @@
+{
+  "name": "dsh-live2d-pet",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness 的 Live2D 桌面宠物：把鲸语（jingyu-live2d-agent）舞台裁成一块透明浮窗停在桌面上，AI 可以用工具让她说话、抬眼、点头、换表情；设置页里能调大小、透明度、头像、待机节奏和全部动作。模型自备（大肥鱼公皮禁止重新分发）。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3",
+      "node": ">=20.18",
+      "profiles": [
+        "desktop",
+        "web"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "shell",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "live2d",
+    "desktop-pet",
+    "vtuber"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.18"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2 <0.3.0 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3",
+    "@deepseek-ai/dsh-home-paths": ">=0.2.0-rc.2 <0.3.0 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3"
+  }
+}

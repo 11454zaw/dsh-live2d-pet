@@ -1,0 +1,8 @@
+# dsh-live2d-pet — bundle patch layer
+#
+# 让这个包变成标准的 profile bundle：
+#   dsh plugin --profile desktop add dsh-live2d-pet
+# 装完即挂载，不用手改 cordis.patch.yml。
+- insert:
+    - id: live2d-pet
+      name: 'dsh-live2d-pet'
