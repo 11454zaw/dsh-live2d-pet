@@ -159,7 +159,11 @@ dsh plugin --profile desktop add dsh-live2d-pet
 
 ## 许可
 
-本插件代码 MIT。鲸语是它作者的，模型是你自己的——这两样都不在这个许可证范围内。
+本插件代码 MIT（见 `LICENSE`）。这个许可证**只覆盖本仓库的代码**，不覆盖：
+
+- **鲸语** `jingyu-live2d-agent`——它是 [InariNGT-Ofiicial](https://github.com/InariNGT-Ofiicial/jingyu-live2d-agent) 的项目，按它自己的条款走；
+- **任何 Live2D 模型 / 贴图 / moc3 / 原画**——属于各自的版权方，各有各的许可（示例里的「大肥鱼」公皮禁止重新分发）；
+- **运行时加载的 Cubism SDK**——按 Live2D Inc. 的条款走。
 
 ---
 
