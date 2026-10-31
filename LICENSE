@@ -19,14 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-This license covers the code in this repository only. It does not cover:
-
-- jingyu-live2d-agent (https://github.com/InariNGT-Ofiicial/jingyu-live2d-agent),
-  which is a separate project by its own author;
-- any Live2D model, texture, moc3, or artwork, which belongs to its own
-  rightsholders and carries its own license;
-- Cubism SDK components loaded by the stage at runtime and governed by
-  Live2D Inc.'s license terms.
