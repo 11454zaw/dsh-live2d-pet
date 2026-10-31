@@ -1,0 +1,9 @@
+node_modules/
+
+# 运行时文件（外壳写的，不该进仓库）
+pet-settings.json
+pet-window.json
+say.txt
+chat.jsonl
+stats.json
+*.log
